@@ -1,0 +1,65 @@
+mkdir backend
+cd backend
+npm init -y
+
+npm install express mongoose dotenv
+npm install nodemon --save-dev
+
+touch .env
+touch .gitignore
+
+mkdir src
+cd src
+
+mkdir config controllers models routes middleware utils
+
+
+touch config/db.js
+
+touch controllers/todo.controller.js
+
+touch models/todo.model.js
+
+touch routes/todo.routes.js
+
+touch middleware/error.middleware.js
+touch middleware/auth.middleware.js
+
+touch app.js
+cd ..
+touch server.js
+
+
+
+todo-app/
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── db.js
+│   │   │
+│   │   ├── controllers/
+│   │   │   └── todo.controller.js
+│   │   │
+│   │   ├── models/
+│   │   │   └── todo.model.js
+│   │   │
+│   │   ├── routes/
+│   │   │   └── todo.routes.js
+│   │   │
+│   │   ├── middleware/
+│   │   │   ├── error.middleware.js
+│   │   │   └── auth.middleware.js
+│   │   │
+│   │   ├── utils/
+│   │   │   └── apiFeatures.js (pagination/filter later)
+│   │   │
+│   │   ├── app.js
+│   │
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── .gitignore
+    ├── server.js
+│
+├── frontend
