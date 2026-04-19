@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 8000;
 
 const connectDB = require("./src/config/db");
 dotenv.config();
-console.log("ENV CHECK:", process.env.MONGO_URI);
+
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
