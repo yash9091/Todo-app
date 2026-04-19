@@ -1,9 +1,10 @@
 const app = require("./src/app");
 
-const PORT = 8000;
 const dotenv = require("dotenv");
+const PORT = process.env.PORT || 8000;
+
 const connectDB = require("./src/config/db");
-dotenv.config()
+dotenv.config();
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
